@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "devDependencies": {
+    "postal": "^1.0.6"
+  }
+}
