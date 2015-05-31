@@ -12,7 +12,7 @@ npm test
 
 ## Coverage
 
-[./images/jest-coverage.png](Code Coverage by Jest)
+![Code Coverage by Jest](./images/jest-coverage.png)
 
 ## Authors
 
