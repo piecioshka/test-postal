@@ -5,7 +5,7 @@
 ## Start
 
 ```
-npm install -g jest
+npm install -g jest-cli
 npm install
 npm test
 ```

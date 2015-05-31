@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "devDependencies": {
     "postal": "^1.0.6"
