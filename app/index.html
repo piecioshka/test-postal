@@ -1,0 +1,22 @@
+<!-- Dependencies -->
+<script src="../node_modules/postal/node_modules/lodash/index.js"></script>
+<script src="../node_modules/postal/lib/postal.js"></script>
+
+<!-- `Person` constructor -->
+<script src="scripts/Person.js"></script>
+<script>
+    // Create one instance of `Person`.
+    var john = new Person('John');
+
+    // Subscribe for saying something.
+    john.speech.subscribe({
+        topic: 'say',
+        callback: function (payload, meta) {
+            console.log(payload);
+            console.info(meta);
+        }
+    });
+
+    // Say something!
+    john.say('Na na na!');
+</script>

@@ -10,6 +10,10 @@ npm install
 npm test
 ```
 
+## Coverage
+
+[./images/jest-coverage.png}(Code Coverage by Jest)
+
 ## Authors
 
  - [piecioshka](http://twitter.com/piecioshka)
