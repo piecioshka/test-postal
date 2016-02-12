@@ -2,7 +2,17 @@
 
 :ledger: Test application building with `postal.js`.
 
-## Test
+## Test in browser?
+
+First you should build `dist` directory.
+
+```
+npm run build
+```
+
+... and open browser in `app/index.html`.
+
+## Unit test
 
 Use `jasmine` for setup unit tests:
 

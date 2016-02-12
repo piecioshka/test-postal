@@ -2,6 +2,8 @@
     "private": true,
     "name": "test-postal",
     "scripts": {
+        "clear": "rm -rf node_modules/ coverage/ app/dist/",
+        "build": "webpack --entry ./app/scripts/setup.js --output-filename ./app/dist/bundle.js",
         "test": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json",
         "coverage": "istanbul cover --include-all-sources jasmine JASMINE_CONFIG_PATH=test/jasmine.json test/unit/**"
     },
