@@ -2,18 +2,31 @@
 
 :ledger: Test application building with `postal.js`.
 
-## Start
+## Test
+
+Use `jasmine` for setup unit tests:
 
 ```
-npm install -g jest-cli
 npm install
 npm test
 ```
 
 ## Coverage
 
-![Code Coverage by Jest](./images/jest-coverage.png)
+Use `istanbul` by command `npm run coverage`:
 
-## Authors
+```
+4 specs, 0 failures
+Finished in 0.011 seconds
+=============================================================================
+Writing coverage object [/Users/piecioshka/projects/test-postal/coverage/coverage.json]
+Writing coverage reports at [/Users/piecioshka/projects/test-postal/coverage]
+=============================================================================
 
- - [piecioshka](http://twitter.com/piecioshka)
+=============================== Coverage summary ===============================
+Statements   : 100% ( 6/6 )
+Branches     : 100% ( 0/0 )
+Functions    : 100% ( 2/2 )
+Lines        : 100% ( 6/6 )
+================================================================================
+```

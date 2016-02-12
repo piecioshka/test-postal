@@ -1,30 +1,27 @@
-(function (root) {
-    'use strict';
+'use strict';
 
+// Imports.
+var postal = require('postal');
+
+/**
+ * Person constructor.
+ * Imitation person from real world.
+ * @constructor
+ */
+function Person() {
+    this.speech = postal.channel('speech');
+}
+
+Person.prototype = {
     /**
-     * @classdesc Person constructor. Imitation person from real world.
-     * @constructor
+     * Put passed message for speech channel.
+     *
+     * @param {string} message
      */
-    function Person() {
-        this.speech = postal.channel('speech');
+    say: function (message) {
+        this.speech.publish('say', message);
     }
+};
 
-    Person.prototype = {
-        /**
-         * Put passed message for speech channel.
-         * @param {string} message
-         */
-        say: function (message) {
-            this.speech.publish('say', message);
-        }
-    };
-
-    // Exports.
-
-    if (typeof module === 'object' && module.exports) {
-        module.exports = Person;
-    } else {
-        root.Person = Person;
-    }
-
-}(this));
+// Exports.
+module.exports = Person;

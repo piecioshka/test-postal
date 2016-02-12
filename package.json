@@ -1,9 +1,12 @@
 {
-  "private": true,
-  "scripts": {
-    "test": "jest --coverage"
-  },
-  "devDependencies": {
-    "postal": "^1.0.6"
-  }
+    "private": true,
+    "name": "test-postal",
+    "scripts": {
+        "test": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json",
+        "coverage": "istanbul cover --include-all-sources jasmine JASMINE_CONFIG_PATH=test/jasmine.json test/unit/**"
+    },
+    "devDependencies": {
+        "postal": "^1.0.8",
+        "istanbul": "^0.4.2"
+    }
 }
