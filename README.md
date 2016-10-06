@@ -1,13 +1,13 @@
 # test-postal
 
-:ledger: Test application building with `postal.js`.
+> :ledger: Test application build with `postal.js`.
 
 ## Test in browser?
 
 First you should build `dist` directory.
 
 ```
-npm run build
+$ npm run build
 ```
 
 ... and open browser in `app/index.html`.
@@ -17,8 +17,8 @@ npm run build
 Use `jasmine` for setup unit tests:
 
 ```
-npm install
-npm test
+$ npm install
+$ npm test
 ```
 
 ## Coverage
