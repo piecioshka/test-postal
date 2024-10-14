@@ -1,6 +1,6 @@
 'use strict';
 
-var Person = require('../../app/scripts/person');
+var Person = require('../../src/scripts/person');
 
 describe('General', function () {
     it('should exists', function () {

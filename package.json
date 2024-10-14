@@ -1,14 +1,22 @@
 {
-    "private": true,
-    "name": "test-postal",
-    "scripts": {
-        "clear": "rm -rf node_modules/ coverage/ app/dist/",
-        "build": "webpack --entry ./app/scripts/setup.js --output-filename ./app/dist/bundle.js",
-        "test": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json",
-        "coverage": "istanbul cover --include-all-sources jasmine JASMINE_CONFIG_PATH=test/jasmine.json test/unit/**"
-    },
-    "devDependencies": {
-        "postal": "^1.0.8",
-        "istanbul": "^0.4.2"
-    }
+  "private": true,
+  "name": "test-postal",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "test": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json",
+    "coverage": "nyc npm run test",
+    "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d dist/"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.2.0",
+    "nyc": "^17.1.0",
+    "postal": "^1.0.8",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
 }

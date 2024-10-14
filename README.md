@@ -1,42 +1,11 @@
 # test-postal
 
-> :ledger: Test application build with `postal.js`.
+📒 Test application build with `postal.js`.
 
-## Test in browser?
+## Previews 🎉
 
-First you should build `dist` directory.
+<https://piecioshka.github.io/test-postal/>
 
-```
-$ npm run build
-```
+## License
 
-... and open browser in `app/index.html`.
-
-## Unit test
-
-Use `jasmine` for setup unit tests:
-
-```
-$ npm install
-$ npm test
-```
-
-## Coverage
-
-Use `istanbul` by command `npm run coverage`:
-
-```
-4 specs, 0 failures
-Finished in 0.011 seconds
-=============================================================================
-Writing coverage object [/Users/piecioshka/projects/test-postal/coverage/coverage.json]
-Writing coverage reports at [/Users/piecioshka/projects/test-postal/coverage]
-=============================================================================
-
-=============================== Coverage summary ===============================
-Statements   : 100% ( 6/6 )
-Branches     : 100% ( 0/0 )
-Functions    : 100% ( 2/2 )
-Lines        : 100% ( 6/6 )
-================================================================================
-```
+[The MIT License](https://piecioshka.mit-license.org) @ 2015-2024
