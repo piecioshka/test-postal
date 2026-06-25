@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "test-postal",
+  "license": "MIT",
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "webpack",
